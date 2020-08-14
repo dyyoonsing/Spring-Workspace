@@ -1,0 +1,18 @@
+package di.anno.n01;
+
+import javax.annotation.Resource;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+public class Car {
+//	@Autowired
+	//@Autowired하면 	--> private Tire tire = new HankookTire();처럼 작동함
+//	@Resource
+	private Tire tire;		//의존관계 발생
+	
+
+	
+	public void prnTireBrand() {
+		System.out.println("설정된 타이어 브랜드 : " + tire.getBrand());
+	}
+}

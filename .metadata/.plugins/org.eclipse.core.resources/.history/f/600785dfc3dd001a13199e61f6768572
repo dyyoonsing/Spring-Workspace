@@ -1,0 +1,12 @@
+package hw.calculator01;
+
+public class MyCalculator {
+	private int firstNum;
+	private int secondNum;
+	private Calculator calculator;
+	
+	public void prnCalculator() {
+		System.out.println(firstNum + " + " + secondNum + " = " + calculator.addition());
+	}
+
+}

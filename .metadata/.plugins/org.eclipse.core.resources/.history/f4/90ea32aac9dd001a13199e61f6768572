@@ -1,0 +1,15 @@
+package hw.calculator01;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.GenericXmlApplicationContext;
+
+public class CalculateMain02 {
+	
+	public static void main(String[] args) {
+		ApplicationContext context = new GenericXmlApplicationContext("ditest01/hw-calculator02.xml");
+		MyCalculator my = context.getBean("mycal", MyCalculator.class); 
+		
+	}
+	
+
+}

@@ -1,0 +1,19 @@
+package hw.shape;
+
+public class Rectangle implements Shape {
+
+	@Override
+	public void getArea(int a, int b) {
+		
+		System.out.println("직사각형의 넓이는 : " + (a * b) );
+	}
+
+	@Override
+	public void getRound(int a, int b) {
+		// TODO Auto-generated method stub
+		System.out.println("직사각형의 둘레는 : " + (2 * (a + b)) );
+		
+	}
+	
+	
+}

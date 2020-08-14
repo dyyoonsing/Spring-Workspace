@@ -1,0 +1,5 @@
+package hw.shape02;
+
+public class Square extends  Shape {
+
+}

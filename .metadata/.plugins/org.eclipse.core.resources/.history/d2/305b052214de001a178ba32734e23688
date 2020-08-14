@@ -1,0 +1,10 @@
+package hw.shape02;
+
+public interface Shape {
+	
+	protected int width;
+	protected int height;
+	protected int radius;
+	
+	public abstract String getShape();
+}

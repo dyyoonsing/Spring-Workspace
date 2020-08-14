@@ -1,0 +1,15 @@
+package hw.shape02;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class Area {
+	
+	private Shape shape;
+	
+	public void getArea() {
+		
+		System.out.println(shape.getShape() +"의 넓이는 : " + );
+	}
+
+}

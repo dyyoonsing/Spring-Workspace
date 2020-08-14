@@ -1,0 +1,22 @@
+package di.collection;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.GenericXmlApplicationContext;
+
+public class ListMain {
+	
+	public static void main(String[] args) {
+		
+		ApplicationContext container = new GenericXmlApplicationContext("");
+		
+		List<String> address = new ArrayList<String>();
+		address.add("서울");
+		address.add("부산");
+		address.add("공주");
+		ListAddress list = new ListAddress();
+		list.setAddress(address);
+	}
+}

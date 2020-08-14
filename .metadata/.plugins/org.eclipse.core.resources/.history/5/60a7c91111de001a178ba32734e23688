@@ -1,0 +1,16 @@
+package hw.shape02;
+
+public class Rectangle extends Shape {
+	
+	
+
+	@Override
+	public void getArea() {
+		// TODO Auto-generated method stub
+		System.out.printf("직사각형의 넓이는 : %d\n", super.height * super.width);
+		
+	}
+	
+	
+	
+}

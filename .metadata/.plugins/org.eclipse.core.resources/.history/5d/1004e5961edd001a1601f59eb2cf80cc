@@ -1,0 +1,11 @@
+package di.basic;
+
+public class DriverMain {
+	
+	public static void main(String[] args) {
+		
+		Car car = new Car();
+		car.prnTireBrand();
+	}
+
+}

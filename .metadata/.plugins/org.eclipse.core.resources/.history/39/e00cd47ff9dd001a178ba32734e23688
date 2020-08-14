@@ -1,0 +1,24 @@
+package di.java;
+
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+/*
+ * xml에서 bean만드는 행동을 대체하는 class - @Configuration 어노테이션 사용
+ */
+@Configuration
+public class Config {
+	
+	@Bean(name="car")
+	public Car getCar() {
+		return new Car();
+	}
+	
+	//<bean class="di.java.HanKookTire" id="hankookTire" />와 같은 의미
+	@Bean
+	public Tire getTire() {
+		return new HankookTire();
+	}
+	
+}

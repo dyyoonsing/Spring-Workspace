@@ -1,0 +1,27 @@
+package hw.shape;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+@Component
+public class MyShapes {
+	
+	@Value("10")
+	private int height;
+	
+	@Value("20")
+	private int width;
+	
+	@Value("5")
+	private int radius;
+	
+	@Autowired("shapes")
+	private Shapes shapes;
+	
+	public MyShapes() {
+		super();
+	}
+	
+
+}

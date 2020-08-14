@@ -1,0 +1,9 @@
+package hw.calculator01;
+
+public class Calculator {
+	
+	public int addition(firstNum, secondNum) {
+		
+	}
+
+}

@@ -1,0 +1,21 @@
+package basic;
+
+import org.springframework.context.ApplicationContext;
+//import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.context.support.FileSystemXmlApplicationContext;
+
+public class HelloMain {
+	
+	public static void main(String[] args) {
+		
+		//ClassPath? src/main/resources를 의미함
+//		ApplicationContext context = new ClassPathXmlApplicationContext("beanContainer.xml");
+		
+		ApplicationContext context = new FileSystemXmlApplicationContext("beanContainer.xml");
+		Hello obj = (Hello)context.getBean("hello");
+		obj.prnMsg();
+		
+		Hello obj2 = (Hello)context.getBean("hello2");
+		obj2.prnMsg();
+	}
+}

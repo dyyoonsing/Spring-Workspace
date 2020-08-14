@@ -1,0 +1,11 @@
+package hw.shape02;
+
+public abstract class Shape {
+	
+	public abstract String getShape();
+	
+	public abstract double getArea();
+
+	
+	
+}

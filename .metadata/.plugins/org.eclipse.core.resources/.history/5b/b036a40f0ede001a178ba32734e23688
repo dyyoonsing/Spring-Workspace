@@ -1,0 +1,10 @@
+package hw.shape02;
+
+public abstract class Shape {
+	
+	private int width;
+	private int height;
+	private int radius;
+	
+	public void getArea();
+}

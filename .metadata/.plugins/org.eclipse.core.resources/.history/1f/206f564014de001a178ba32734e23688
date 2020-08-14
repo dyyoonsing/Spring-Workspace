@@ -1,0 +1,6 @@
+package hw.shape02;
+
+public class Rectangle implements Shape {
+
+
+}

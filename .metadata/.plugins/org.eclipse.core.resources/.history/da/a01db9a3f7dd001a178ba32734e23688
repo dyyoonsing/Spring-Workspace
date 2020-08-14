@@ -1,0 +1,14 @@
+package di.java;
+
+import org.springframework.context.annotation.Configuration;
+
+/*
+ * xml에서 bean만드는 행동을 대체하는 class
+ */
+@Configuration
+public class Config {
+	
+	public Tire getTire() {
+		return new HankookTire();
+	}
+}

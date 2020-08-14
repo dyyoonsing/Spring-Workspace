@@ -12,5 +12,6 @@
 	<!-- car instance 객체를 만들면서 setter까지 수행  -->
 		<bean class="di.xml.n01.Car" id="car2">
 			<property name="tire" ref="hankook" />
+			<!-- 유지보수를 위해선... ref에 hankook이 아니라 tire로 써놓고, 만약 바뀌면 위에 id=tire 해놓은곳의 class를 바꾸는 방식 -->
 		</bean>
 </beans>

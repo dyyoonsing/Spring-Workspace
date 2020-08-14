@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" 
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans
+	   					   http://www.springframework.org/schema/beans/spring-beans.xsd ">
+	<!-- Hello hello = new Hello() bean 하나당 객체 하나씩 만들어짐 / lazy-init은 필요할때 만드는 것-->	
+	<bean class="basic.Hello" id="hello" lazy-init="true"/>
+	<bean class="basic.Hello" id="hello2" lazy-init="true"/>
+	<bean class="basic.HelloSingle" id="hs" />
+	<bean class="basic.HelloSingle" id="hs2" />
+</beans>

@@ -1,0 +1,19 @@
+package hw.shape02;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class Rectangle extends Shape {
+
+	protected int width = super.width;
+	protected int height = super.height;
+	
+	@Override
+	public String getShape() {
+		
+		return "사각형";
+	}
+	
+	
+	
+}

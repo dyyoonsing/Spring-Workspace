@@ -1,0 +1,8 @@
+package hw.shape;
+
+public interface Shape {
+	
+	public void area();
+	public void round();
+
+}

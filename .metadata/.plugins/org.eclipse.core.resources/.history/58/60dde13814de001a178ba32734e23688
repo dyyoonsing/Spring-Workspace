@@ -1,0 +1,11 @@
+package hw.shape02;
+
+public class Rectangle extends Shape {
+
+	@Override
+	public String getShape() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
