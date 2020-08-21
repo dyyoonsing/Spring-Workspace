@@ -1,8 +1,0 @@
-package basic;
-
-public class HelloSingle {
-	
-	private HelloSingle() {
-		System.out.println("HelloSingle객체 로딩...");
-	}
-}

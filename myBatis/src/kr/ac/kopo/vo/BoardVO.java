@@ -8,6 +8,16 @@ public class BoardVO {
 	private int viewCnt;
 	private String regDate;
 	
+	private int[] nos;
+	
+	public int[] getNos() {
+		return nos;
+	}
+
+	public void setNos(int[] nos) {
+		this.nos = nos;
+	}
+
 	public BoardVO() {
 		super();
 	}
