@@ -2,15 +2,19 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
     xmlns:mvc="http://www.springframework.org/schema/mvc"
     xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:tx="http://www.springframework.org/schema/tx"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.springframework.org/schema/beans   
     http://www.springframework.org/schema/beans/spring-beans.xsd
     http://www.springframework.org/schema/context   
     http://www.springframework.org/schema/context/spring-context.xsd
     http://www.springframework.org/schema/mvc
-    http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+    http://www.springframework.org/schema/mvc/spring-mvc.xsd
+    http://www.springframework.org/schema/tx
+    http://www.springframework.org/schema/tx/spring-tx.xsd ">
 
 	<context:component-scan base-package="kr.ac.kopo" />
+	
     <mvc:annotation-driven>
     	<mvc:message-converters>
     		<bean class="org.springframework.http.converter.StringHttpMessageConverter">
@@ -53,5 +57,22 @@
 	<mvc:view-resolvers>
 		<mvc:jsp prefix="/WEB-INF/jsp/" suffix=".jsp" />
 	</mvc:view-resolvers>
-
+	<!-- 인터셉터 처리  -->
+	<bean class="kr.ac.kopo.interceptor.LoginInterceptor" id="loginInterceptor"></bean>
+	<mvc:interceptors>
+		<mvc:interceptor>
+			<mvc:mapping path="/**/"/>
+			<mvc:exclude-mapping path="/login"/>
+			<mvc:exclude-mapping path="/board"/>
+			<mvc:exclude-mapping path="/resources/**"/>
+			<ref bean="loginInterceptor"/>
+		</mvc:interceptor>
+	</mvc:interceptors>
+	
+	<!-- 트랜잭션 처리  -->
+	<bean class="org.springframework.jdbc.datasource.DataSourceTransactionManager" id="transactionManager" >
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+	<tx:annotation-driven transaction-manager="transactionManager"/>
+	
 </beans>

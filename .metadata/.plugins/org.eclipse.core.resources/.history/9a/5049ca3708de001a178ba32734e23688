@@ -1,8 +1,0 @@
-package hw.shape;
-
-public interface Shape {
-	
-	public void getArea(int a, int b);
-	public void getRound(int a, int b);
-
-}

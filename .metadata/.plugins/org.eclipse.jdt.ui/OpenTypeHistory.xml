@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <typeInfoHistroy>
 <typeInfo handle="=Lecture-Spring/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;aop.xml{Employee.java[Employee" modifiers="513" timestamp="1597712021302"/>
+<typeInfo handle="=Mission-Spring/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;kr.ac.kopo.reply.dao{ReplyDAO.java[ReplyDAO" modifiers="513" timestamp="1598425005468"/>
+<typeInfo handle="=Mission-Spring/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;kr.ac.kopo.reply.service{ReplyService.java[ReplyService" modifiers="513" timestamp="1598493871629"/>
 </typeInfoHistroy>

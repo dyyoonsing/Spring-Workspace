@@ -1,5 +1,0 @@
-package aop.pojo;
-
-public interface Employee {
-
-}

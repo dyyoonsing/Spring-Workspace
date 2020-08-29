@@ -1,9 +1,0 @@
-package di.java;
-
-
-public class DriverMain {
-
-	public static void main(String[] args) {
-		
-	}
-}
